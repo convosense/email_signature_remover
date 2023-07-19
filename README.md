@@ -104,7 +104,13 @@ Thank you for considering my inquiry. Looking forward to your response.
 
 The signature part from the original email text is removed, and this text can be further used for ***sentiment analysis***.
 
+Click [here](https://pypi.org/project/convosense-utilities/) for the PyPI link, where the package is published.
+
+## Demo
+
 For a sample demo in Google Colab notebook, click [here](https://colab.research.google.com/drive/1FYZHY-Q_KvcxtXlDfLaTjtdsejW099RC?usp=sharing).
+
+![Gold Modern Personal LinkedIn Banner (3)](https://github.com/swapnilbonde94/email_signature_remover/assets/94321457/094cd9b6-449f-42ba-84eb-b3dda9d08979)
 
 
 ## Accuracy
