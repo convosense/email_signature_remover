@@ -1,0 +1,24 @@
+[project]
+name = "convosense_utilities"
+version = "1.0.1"
+authors = [
+  { name="Swapnil Bonde", email="swapnilbonde94@gmail.com" }
+]
+description = "A package to extract the email body out of the email text, by removing signature, in order to get accurate sentiment results."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "email_reply_parser",
+  "nltk",
+  "spacy"
+]
+
+[project.urls]
+"GitHub repo" = "https://github.com/convosense/email_signature_remover"
+"Bug Tracker" = "https://github.com/convosense/email_signature_remover/issues"

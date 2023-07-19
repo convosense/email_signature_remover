@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/convosense_utilities/__init__.py
+src/convosense_utilities/email_signature_remover.py
+src/convosense_utilities.egg-info/PKG-INFO
+src/convosense_utilities.egg-info/SOURCES.txt
+src/convosense_utilities.egg-info/dependency_links.txt
+src/convosense_utilities.egg-info/requires.txt
+src/convosense_utilities.egg-info/top_level.txt
