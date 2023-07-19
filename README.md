@@ -31,26 +31,7 @@ Before running the script, ensure you have the following dependencies installed 
 4. [re (Regular expression operations)](https://docs.python.org/3/library/re.html): The built-in Python module for regular expressions, used for pattern matching and text processing.
 
    (No need to install separately, re is included in the Python standard library)
-
-
-## Functions
-
-The script contains several functions to remove email signatures step-by-step:
-
-1. **`remove_newline(latest_reply)`**: Removes excessive line spaces from the email.
-
-2. **`parse_latest_reply(email_message)`**: Parses the latest reply from the email using `email_reply_parser`.
-
-3. **`check_email_starts_with_special_char(s)`**: Checks if the email starts with a special character (e.g., a dash).
-
-4. **`strip_lines_with_angles_and_newline(text)`**: Removes lines that contain anything inside angled braces `< >` and any newline characters.
-
-5. **`nltk_remove_signature(email_text)`**: Uses NLTK for sentence tokenization and spaCy for word tokenization (NER in the last sentence) to remove the signature from the email.
-
-6. **`regex_ty_strip(text)`**: Uses regex to identify thank-you keywords and strip everything after them.
-
-7. **`remove_sign(email_message)`**: Combines all the above functions to provide a one-for-all function to remove the email signature.
-
+   
 
 
 ## Installation of the main library
@@ -58,6 +39,8 @@ Install the convosense_utilities library in your environment:
 ```python
 pip install convosense_utilities
 
+# If any error occurs, ensure that you have installed the latest version using the following command:
+# pip install -U convosense_utilities
 ```
 
 
@@ -66,7 +49,8 @@ pip install convosense_utilities
 1. Install the required dependencies mentioned in the **Dependencies** section.
 
 2. Use the `remove_sign(email_message)` function with the `email_message` as input to obtain the email body without the signature.
-   Note: Make sure that the input email_message is in string format.
+
+   **Note: Make sure that the input email_message is in string format.**
 
 ```python
 # A sample to demonstrate the removal of email signature from the email body
@@ -94,6 +78,9 @@ LinkedIn: https://www.linkedin.com/in/swapnil-bonde-917905212/
 ```python
 # Import the email_signature_remover module
 from convosense_utilities import email_signature_remover
+```
+
+```python
 
 # Pass on this email_message text in the remove_sign() function:
 cleaned_text = email_signature_remover.remove_sign(email_message)
@@ -115,7 +102,9 @@ If you are open to a collaboration or have any thoughts on how we could potentia
 Thank you for considering my inquiry. Looking forward to your response.
 ```
 
-The signature part from the original email text is removed, and this text can be further used for ***sentiment analysis***
+The signature part from the original email text is removed, and this text can be further used for ***sentiment analysis***.
+
+For a sample demo in Google Colab notebook, click [here](https://colab.research.google.com/drive/1FYZHY-Q_KvcxtXlDfLaTjtdsejW099RC?usp=sharing).
 
 
 ## Accuracy
